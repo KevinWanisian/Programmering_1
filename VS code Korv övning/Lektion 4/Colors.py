@@ -1,7 +1,7 @@
 import os
 
+ui_width = 50
 
-ui_width = 30
 while True:
     print(ui_width * '*')
     print('FÄRG-GISSAREN 2.0'.center(ui_width))
@@ -13,8 +13,8 @@ while True:
     print('-' * ui_width)
 
     # Antal försök
-
     times = 1
+
     color = input('Gissa färg > ').lower()
 
     while color != 'gul':
@@ -23,14 +23,15 @@ while True:
         color = input('Gissa färg > ').lower()
 
     print('-' * 23)
-    print('Korrekt gissat efter'
-          , times, 'försök!')
-    input("Tryck på enter för att starta om:")
+    print('Korrekt gissat efter', times, 'försök!')
 
+    input('Tryck på Retur för att starta igen')
+
+    # Rensa terminalfönstret
     if os.name == 'nt':
         os.system('cls')
         # print('Du kör Windows')
-    elif os.name == "posix":
+    elif os.name == 'posix':
         os.system('clear')
         # print('Du kör Mac eller Linux')
 
