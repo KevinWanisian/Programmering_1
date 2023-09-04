@@ -1,3 +1,4 @@
+# Exempel på try-except i Python
 tal = input("Ange ett heltal:")
 try:
     tal = int(tal)
