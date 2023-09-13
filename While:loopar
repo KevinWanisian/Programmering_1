@@ -1,0 +1,7 @@
+while True:
+    print("This program is running")
+    goAgian = input("Go again (y/n)?")
+    if goAgain == "n":
+        break
+    
+    print("Aww, I was having a good time!")

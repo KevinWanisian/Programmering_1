@@ -1,0 +1,34 @@
+/*
+Detta är en CSS-kommentar
+*/
+
+h1{
+    color:blue;
+    font-size:32px;
+
+}
+
+a{
+    text-decoration:none;
+}
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
